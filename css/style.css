@@ -1,0 +1,163 @@
+/* Start Variables */
+
+:root {
+  /* Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+
+/* End Global Rules */
+
+/* Start Single Price Card */
+
+main {
+    margin: 5rem 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    main {
+        width: 630px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    }
+}
+
+main .content {
+    background-color: white;
+    padding: 1.8rem 1.3rem;
+}
+
+@media (min-width: 992px) {
+    main .content {
+        padding: 2rem;
+    }
+}
+
+main .content h1 {
+    font-size: 1.2rem;
+    color: var(--Cyan);
+    margin-bottom: 2rem;
+}
+
+main .content span {
+    color: var(--Bright-Yellow);
+    font-weight: bold;
+}
+
+main .content p {
+    margin-top: 1.5rem;
+    color: var(--Grayish-Blue);
+    line-height: 26px;
+    font-size: 15px;
+}
+
+@media (min-width: 992px) {
+    main .content p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    main .box {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+main .box .sign {
+    padding: 1.8rem 1.3rem;
+    background-color: var(--Cyan);
+}
+
+@media (min-width: 992px) {
+    main .box .sign {
+        padding: 2rem;
+    }
+}
+
+main .box .sign h2 {
+    font-size: 1.2rem;
+    color: var(--Light-Gray);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+main .box .sign .monthly {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+main .box .sign .monthly span {
+    color: var(--Grayish-Blue);
+    font-size: 17px;
+    margin-left: 1rem;
+}
+
+main .box .sign p {
+    color: var(--Light-Gray);
+    margin-bottom: 2rem;
+}
+
+main .box .sign button {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 5px 20px 0 var(--Grayish-Blue);
+}
+
+main .box .us {
+    padding: 1.8rem  6rem 1.8rem 1.3rem;
+    background-color: var(--Grayish-Blue);
+}
+
+@media (min-width: 992px) {
+    main .box .us {
+        padding: 2rem 3rem 2rem 2rem;
+    }
+}
+
+main .box .us h3 {
+    color: var(--Light-Gray);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+main .box .us p {
+    line-height: 26px;
+    color: var(--Light-Gray);
+}
+
+/* End Single Price Card */

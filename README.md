@@ -1,2 +1,1 @@
-# Single-Price-Grid
-Single-Price-Grid
+# Single price grid component
